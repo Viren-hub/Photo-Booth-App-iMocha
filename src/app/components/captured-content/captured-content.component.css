@@ -1,0 +1,94 @@
+.captured-container {
+  text-align: center;
+  width: 100%;
+  padding: 0px 15px;
+  margin: 0px !important;
+}
+.captured-video{
+  height: 70%;
+}
+.video{
+  width: 100%;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.video:hover {
+  transform: translateY(-2px);
+}
+.controls{
+  height: 30%;
+  width: 60%;
+  padding: 10px 0px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+
+.button-50 {
+  appearance: button;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 20px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+/* Small screens (max-width: 767px) */
+@media (max-width: 767px) {
+  .button-50 {
+    font-size: 0.875rem; 
+    padding: 0.5rem 1.4rem; 
+    
+  }
+}
+
+/* Medium screens (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .button-50 {
+    font-size: 1rem; 
+    padding: 0.75rem 1.7rem; 
+  }
+}
+
+/* Large screens (1024px and above) */
+@media (min-width: 1024px) {
+  .button-50 {
+    font-size: 1.1rem; 
+    padding: 1rem 2rem; 
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

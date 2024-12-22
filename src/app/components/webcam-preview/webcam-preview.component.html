@@ -1,0 +1,18 @@
+<div class="webcam-container">
+  <div class="live-camera-section">
+    <div *ngIf="isRecording" class="recording-indicator">
+      <span class="recording-dot"></span> Rec {{ elapsedTime }}
+    </div>
+    <div *ngIf="errorMessage" class="error-message">
+      {{ errorMessage }}
+    </div>
+    <video *ngIf="!errorMessage" class="img-fluid video" #videoElement autoplay></video>
+    <canvas *ngIf="!errorMessage" class="img-fluid video" #canvasElement style="display: none;"></canvas>
+  </div>
+
+  <div class="controls" *ngIf="!errorMessage">
+    <button class="button-50" (click)="takePhoto()" role="button" [disabled]="isRecording">Take Photo</button>
+    <button class="button-50" role="button" *ngIf="!isRecording" (click)="startRecording()">Record Video</button>
+    <button class="button-50" role="button" *ngIf="isRecording" (click)="stopRecording()">Stop Recording</button>
+  </div>
+</div>

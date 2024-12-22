@@ -1,0 +1,53 @@
+.app-container {
+  width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  margin: auto;
+  padding: 20px 0px;
+  grid-template-columns: 1fr 1fr;
+  background-color: #aabbcc52;
+}
+
+.on-capture{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.on-preview{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.controls{
+  height: 30%;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+/* Target smartphones */
+/* @media only screen and (max-width: 767px) {
+  .app-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .on-capture{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .on-preview{
+    width: 100vw;
+    height: 50vh;
+  }
+} */
+@media only screen and (max-width: 767px) {
+  .app-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto; 
+  }
+}
